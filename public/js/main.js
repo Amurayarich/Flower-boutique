@@ -1,3 +1,5 @@
+//-----------------home page-------------------\\
+
 // Получаем элементы слайдера
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
@@ -35,3 +37,5 @@ function updateSlider() {
 
 // Инициализация слайдера
 updateSlider();
+
+//-----------------about page-------------------\\

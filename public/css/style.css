@@ -51,6 +51,17 @@ a:hover {
     margin-bottom: 25px;
 }
 
+.container__subtitle {
+    font-size: 30px;
+    color: #426B1F;
+    margin-bottom: 25px;
+}
+
+.container__text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
 .container__image {
     display: block;
     margin-left: auto;
@@ -163,5 +174,51 @@ a:hover {
     align-items: center;
 }
 
+.footer__copy {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
+.delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+    background-color: lightgray;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto; /* Center the delivery section */
+}
+
+.delivery__info, .delivery__map {
+    width: 435px;
+    height: 400px;
+}
+
+.delivery__info-title {
+    font-size: 30px;
+    color: #426B1F;
+    margin-bottom: 10px;
+}
+
+.delivery__info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.delivery__info-list-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.delivery__map {
+    border-left: 5px solid black;
+}
+
+.delivery__map img {
+    max-width: 100%;
+    height: auto;
+}
 
