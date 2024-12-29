@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <script src="/js/main.js"></script>
+    <header>
+        <div class="header">
+            <div class="header__title">Цветочный бутик С & Н</div>
+            <ul class="header__menu">
+                <li class="header__menu-list"><a href="/index.html">Главная</a></li>
+                <li class="header__menu-list"><a href="/html/catalog.html">Каталог</a></li>
+                <li class="header__menu-list"><a href="/html/about.html">О доставке</a></li>
+                <li class="header__menu-list"><a href="/html/basket.html"><img src="/img/basket.png" alt="Корзина"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container__title">Подарите радость с каждым лепестком!</div>
+        <img src="/img/woman.png" class="container__image" alt="Дама с цветами">
+        <a href="/html/catalog.html" class="container__button">Каталог</a>
+        <div class="container__title">Популярные букеты</div>
+        <div class="container__slider">
+            <button class="slider__button slider__button--left" onclick="prevSlide()">&#10094;</button>
+            <div class="slider__images">
+                <img src="/img/2.png" class="slider__image" alt="Цветок 1">
+                <img src="/img/3.png" class="slider__image" alt="Цветок 2">
+                <img src="/img/4.png" class="slider__image" alt="Цветок 3">
+            </div>
+            <button class="slider__button slider__button--right" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
 </body>
 </html>
