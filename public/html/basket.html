@@ -14,7 +14,12 @@
                 <li class="header__menu-list"><a href="/index.html">Главная</a></li>
                 <li class="header__menu-list"><a href="/html/catalog.html">Каталог</a></li>
                 <li class="header__menu-list"><a href="/html/about.html">О доставке</a></li>
-                <li class="header__menu-list"><a href="/html/basket.html"><img src="/img/basket.png" alt="Корзина"></a></li>
+                <li class="header__menu-list">
+                    <a href="/html/basket.html" class="basket-link">
+                        <img src="/img/basket.png" alt="Корзина">
+                        <span class="basket-count" id="basket-count"></span>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -34,6 +39,6 @@
         </ul>
         <div class="footer__copy">© 2024, Цветочный бутик С&Н</div>
     </div>
-
+    <script src="/js/main.js"></script>
 </body>
 </html>

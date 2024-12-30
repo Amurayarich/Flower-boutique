@@ -39,6 +39,24 @@ a:hover {
     font-size: 20px;
 }
 
+.basket-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.basket-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 14px;
+    display: none; /* Скрыть по умолчанию */
+}
+
 .container {
     text-align: center;
 
@@ -277,7 +295,7 @@ a:hover {
     margin: 10px 0;
 }
 
-.catalog__item-button {
+.add-to-cart {
     font-size: 16px;
     color: white;
     background-color: #426B1F;
@@ -288,6 +306,6 @@ a:hover {
     text-decoration: none;
 }
 
-.catalog__item-button:hover {
+.add-to-cart:hover {
     background-color: #365a17;
 }

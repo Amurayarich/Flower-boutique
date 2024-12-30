@@ -14,11 +14,15 @@
                 <li class="header__menu-list"><a href="/index.html">Главная</a></li>
                 <li class="header__menu-list"><a href="/html/catalog.html">Каталог</a></li>
                 <li class="header__menu-list"><a href="/html/about.html">О доставке</a></li>
-                <li class="header__menu-list"><a href="/html/basket.html"><img src="/img/basket.png" alt="Корзина"></a></li>
+                <li class="header__menu-list">
+                    <a href="/html/basket.html" class="basket-link">
+                        <img src="/img/basket.png" alt="Корзина">
+                        <span class="basket-count" id="basket-count"></span>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
-
     <main>
         <div class="catalog__title">Каталог</div> 
         <div class="catalog"> 
@@ -27,7 +31,7 @@
                 <div class="catalog__item-info">
                     <h2 class="catalog__item-title">Утренний</h2>
                     <p class="catalog__item-price">2800 руб.</p>
-                    <button class="catalog__item-button">Добавить в корзину</button>
+                    <button class="add-to-cart">Добавить в корзину</button>
                 </div>
             </div>
             <div class="catalog__item">
@@ -35,7 +39,7 @@
                 <div class="catalog__item-info">
                     <h2 class="catalog__item-title">Нежный</h2>
                     <p class="catalog__item-price">3000 руб.</p>
-                    <button class="catalog__item-button">Добавить в корзину</button>
+                    <button class="add-to-cart">Добавить в корзину</button>
                 </div>
             </div>
             <div class="catalog__item">
@@ -43,22 +47,19 @@
                 <div class="catalog__item-info">
                     <h2 class="catalog__item-title">Мелодия любви</h2>
                     <p class="catalog__item-price">2500 руб.</p>
-                    <button class="catalog__item-button">Добавить в корзину</button>
+                    <button class="add-to-cart">Добавить в корзину</button>
                 </div>
             </div>
-
             <div class="catalog__item">
                 <img src="/img/4.png" alt="Flower 4" class="catalog__item-image">
                 <div class="catalog__item-info">
                     <h2 class="catalog__item-title">Летний праздник</h2>
                     <p class="catalog__item-price">2200 руб.</p>
-                    <button class="catalog__item-button">Добавить в корзину</button>
+                    <button class="add-to-cart">Добавить в корзину</button>
                 </div>
             </div>
         </div>
     </main>
-
-
     <div class="footer">
         <div class="footer__title">Контакты</div>
          <ul class="footer__menu">
@@ -73,5 +74,6 @@
         </ul>
         <div class="footer__copy">© 2024, Цветочный бутик С&Н</div>
     </div>
+    <script src="/js/main.js"></script>
 </body>
 </html>
