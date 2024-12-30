@@ -1,5 +1,35 @@
-//-----------------home page-------------------\\
+const addtoCartButtons = document.querySelectorAll('.add-to-cart');
+const basketCounter = document.querySelector('.basket-count');
+let basketCount = localStorage.getItem('basketCount') ? parseInt(localStorage.getItem('basketCount')) : 0;
 
+basketCounter.textContent = basketCount;
+if (basketCount === 0) {
+  basketCounter.style.display = 'none';
+} else {
+  basketCounter.style.display = 'block';
+}
+
+addtoCartButtons.forEach(button => {
+  button.addEventListener('click', addCart);
+});
+
+function addCart(event) {
+  basketCount++;
+  basketCounter.textContent = basketCount;
+  basketCounter.style.display = 'block';
+  localStorage.setItem('basketCount', basketCount);
+  
+  const originalText = event.target.textContent;
+  event.target.textContent = 'Добавлено!';
+  event.target.disabled = true;
+  
+  setTimeout(() => {
+    event.target.textContent = originalText;
+    event.target.disabled = false;
+  }, 1500);
+}
+
+//-----------------slider-------------------\\
 // Получаем элементы слайдера
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
@@ -37,5 +67,3 @@ function updateSlider() {
 
 // Инициализация слайдера
 updateSlider();
-
-//-----------------about page-------------------\\
